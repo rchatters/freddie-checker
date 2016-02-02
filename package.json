@@ -1,0 +1,26 @@
+{
+  "name": "freddie-checker",
+  "version": "0.0.1",
+  "description": "Scarper to check when new MailChimp Freddies are available",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "5.5.0"
+  },
+  "keywords": [
+    "freddie",
+    "MailChimp",
+    "Node"
+  ],
+  "author": "Ryan Chatterton (rchatters)",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "eslint": "^1.10.3",
+    "express": "^4.13.4",
+    "request": "^2.67.0"
+  }
+}
