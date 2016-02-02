@@ -7,6 +7,7 @@ var app = express();
 var minutes = 1;
 var the_interval = minutes * 60 * 1000;
 
+app.set('port', (process.env.PORT || 8081));
 
 app.get('/scrape', function(req, res) {
 	var url = 'http://mailchimp.com/replyall/';
@@ -29,6 +30,7 @@ app.get('/scrape', function(req, res) {
  	//}, the_interval);
 });
 
-app.listen('8081');
-console.log('Magic happens on port 8081');
+app.listen(app.get('port'), function() {
+	console.log('Magic happens on port 8081');
+});
 exports = module.exports = app;
